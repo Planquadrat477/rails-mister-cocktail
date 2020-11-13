@@ -6,5 +6,5 @@ resources :cocktails, only: [:index, :show, :new, :create] do
     resources :doses, only: [:create]
     resources :review, only: [:create]
   end
-    resources :doses, only: [:create]
+    resources :doses, only: [:create, :destroy]
 end
